@@ -66,7 +66,9 @@ def eval_results():
     res = []
     for p in sorted((OUT / "eval").glob("*/results.json")):
         data = json.loads(p.read_text())
-        if "summary" in data:  # detection runs; fix-quality runs are served by /api/fix_quality
+        # detection runs only; fix-quality runs are served by /api/fix_quality,
+        # photo-diagnosis runs have a different summary shape
+        if "summary" in data and "drawings" in data["summary"]:
             res.append({"run": p.parent.name, **data["summary"]})
     return res
 

@@ -288,14 +288,17 @@ async function poll(id) {
 function showImages(job, partial) {
   const f = job.files || {};
   $("#tabs").hidden = !f.after_marked;
-  const before = `<figure><img src="${f.before_marked || job.input}?t=${Date.now() % 1e6}" alt="before">
+  const before = `<figure><img src="${f.before_marked || job.input}" alt="before">
       <figcaption>Before — issues highlighted (red)</figcaption></figure>`;
   const after = f.after_marked ? `<figure><img src="${f.after_marked}" alt="after">
       <figcaption>After auto-fix — changed features (green), re-rendered and re-checked</figcaption></figure>` : "";
-  if (partial && !f.before_marked) { $("#imgs").className = "imgs"; $("#imgs").innerHTML = before; return; }
   const v = after ? view : "before";
-  $("#imgs").className = "imgs" + (v === "both" ? " two" : "");
-  $("#imgs").innerHTML = v === "both" ? before + after : v === "after" ? after : before;
+  const html = (partial && !f.before_marked) ? before : v === "both" ? before + after : v === "after" ? after : before;
+  // Polling calls this every 700 ms; only touch the DOM when the images change, or they reload and flicker.
+  if ($("#imgs").dataset.html === html) return;
+  $("#imgs").dataset.html = html;
+  $("#imgs").className = "imgs" + (v === "both" && !(partial && !f.before_marked) ? " two" : "");
+  $("#imgs").innerHTML = html;
   document.querySelectorAll("#imgs img").forEach(img => img.onclick = () => {
     $("#zoom img").src = img.src; $("#zoom").showModal(); });
 }
