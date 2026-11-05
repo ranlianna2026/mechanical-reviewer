@@ -1,0 +1,30 @@
+{
+  "L": 135,
+  "W": 85,
+  "T": 20,
+  "material": "STAINLESS STEEL 304",
+  "name": "MANIFOLD BLOCK",
+  "number": "DFM-EVAL-D04",
+  "rev": "A",
+  "blind_hole": null,
+  "slot": null,
+  "pocket": {
+    "x0": 22.0,
+    "x1": 113.5,
+    "y0": 74.1,
+    "y1": 84.6,
+    "width": 91.5,
+    "height": 10.5,
+    "depth": 5.5,
+    "corner_r": 2.0,
+    "wall": 0.4,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": true,
+  "neg_tol_W": false
+}

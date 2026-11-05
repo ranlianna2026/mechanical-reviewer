@@ -1,0 +1,43 @@
+{
+  "L": 135,
+  "W": 65,
+  "T": 19,
+  "material": "STEEL 1018",
+  "name": "MOTOR BRACKET BASE",
+  "number": "DFM-EVAL-D02",
+  "rev": "A",
+  "blind_hole": {
+    "D": 5.0,
+    "depth": 13.0,
+    "x": 40.5,
+    "y": 21.5,
+    "ratio": 2.6
+  },
+  "slot": {
+    "width": 10.0,
+    "depth": 15.5,
+    "length": 30.0,
+    "x": 88.0,
+    "y": 11.0,
+    "ratio": 1.55
+  },
+  "pocket": {
+    "x0": 18.0,
+    "x1": 114.5,
+    "y0": 39.0,
+    "y1": 62.5,
+    "width": 96.5,
+    "height": 23.5,
+    "depth": 5.5,
+    "corner_r": 2.0,
+    "wall": 2.5,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": true,
+  "neg_tol_W": true
+}

@@ -1,0 +1,43 @@
+{
+  "L": 85,
+  "W": 75,
+  "T": 16,
+  "material": "ALUMINUM 7075-T6",
+  "name": "CAMERA MOUNT",
+  "number": "DFM-EVAL-D11",
+  "rev": "A",
+  "blind_hole": {
+    "D": 3.0,
+    "depth": 10.0,
+    "x": 25.5,
+    "y": 25.0,
+    "ratio": 3.33
+  },
+  "slot": {
+    "width": 8.0,
+    "depth": 13.0,
+    "length": 25.0,
+    "x": 55.0,
+    "y": 13.0,
+    "ratio": 1.62
+  },
+  "pocket": {
+    "x0": 19.0,
+    "x1": 68.0,
+    "y0": 47.5,
+    "y1": 72.5,
+    "width": 49.0,
+    "height": 25.0,
+    "depth": 3.5,
+    "corner_r": 1.5,
+    "wall": 2.5,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": true,
+  "neg_tol_W": true
+}

@@ -1,0 +1,37 @@
+{
+  "L": 105,
+  "W": 60,
+  "T": 22,
+  "material": "STEEL 1018",
+  "name": "COVER PLATE",
+  "number": "DFM-EVAL-D15",
+  "rev": "A",
+  "blind_hole": null,
+  "slot": {
+    "width": 8.0,
+    "depth": 19.0,
+    "length": 30.0,
+    "x": 68.0,
+    "y": 10.0,
+    "ratio": 2.38
+  },
+  "pocket": {
+    "x0": 17.5,
+    "x1": 84.0,
+    "y0": 37.0,
+    "y1": 57.0,
+    "width": 66.5,
+    "height": 20.0,
+    "depth": 7.5,
+    "corner_r": 2.5,
+    "wall": 3.0,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": "W",
+  "general_tol": true,
+  "neg_tol_W": false
+}

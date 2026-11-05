@@ -1,0 +1,43 @@
+{
+  "L": 115,
+  "W": 75,
+  "T": 17,
+  "material": "ALUMINUM 6061-T6",
+  "name": "COVER PLATE",
+  "number": "DFM-EVAL-D03",
+  "rev": "A",
+  "blind_hole": {
+    "D": 3.0,
+    "depth": 9.5,
+    "x": 34.5,
+    "y": 25.0,
+    "ratio": 3.17
+  },
+  "slot": {
+    "width": 2.0,
+    "depth": 14.0,
+    "length": 30.0,
+    "x": 75.0,
+    "y": 13.0,
+    "ratio": 7.0
+  },
+  "pocket": {
+    "x0": 21.0,
+    "x1": 97.5,
+    "y0": 46.0,
+    "y1": 72.5,
+    "width": 76.5,
+    "height": 26.5,
+    "depth": 5.0,
+    "corner_r": 0.0,
+    "wall": 2.5,
+    "sharp_via_note": true
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": false,
+  "neg_tol_W": true
+}

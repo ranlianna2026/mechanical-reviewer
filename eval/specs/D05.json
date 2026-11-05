@@ -1,0 +1,36 @@
+{
+  "L": 150,
+  "W": 85,
+  "T": 28,
+  "material": "ALUMINUM 6061-T6",
+  "name": "FIXTURE PLATE",
+  "number": "DFM-EVAL-D05",
+  "rev": "A",
+  "blind_hole": {
+    "D": 2.0,
+    "depth": 24.5,
+    "x": 45.0,
+    "y": 28.0,
+    "ratio": 12.25
+  },
+  "slot": null,
+  "pocket": {
+    "x0": 17.0,
+    "x1": 128.5,
+    "y0": 63.2,
+    "y1": 84.7,
+    "width": 111.5,
+    "height": 21.5,
+    "depth": 6.5,
+    "corner_r": 0.0,
+    "wall": 0.3,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": true,
+  "neg_tol_W": true
+}

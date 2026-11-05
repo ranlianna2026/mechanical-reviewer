@@ -1,0 +1,36 @@
+{
+  "L": 130,
+  "W": 70,
+  "T": 16,
+  "material": "STEEL 1018",
+  "name": "SENSOR MOUNT PLATE",
+  "number": "DFM-EVAL-D01",
+  "rev": "A",
+  "blind_hole": {
+    "D": 4.0,
+    "depth": 13.0,
+    "x": 39.0,
+    "y": 23.0,
+    "ratio": 3.25
+  },
+  "slot": null,
+  "pocket": {
+    "x0": 21.5,
+    "x1": 112.0,
+    "y0": 54.0,
+    "y1": 67.0,
+    "width": 90.5,
+    "height": 13.0,
+    "depth": 3.5,
+    "corner_r": 0.0,
+    "wall": 3.0,
+    "sharp_via_note": true
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": true,
+  "neg_tol_W": false
+}

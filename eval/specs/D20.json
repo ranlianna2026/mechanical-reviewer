@@ -1,0 +1,43 @@
+{
+  "L": 110,
+  "W": 80,
+  "T": 25,
+  "material": "ALUMINUM 7075-T6",
+  "name": "ADAPTER PLATE",
+  "number": "DFM-EVAL-D20",
+  "rev": "A",
+  "blind_hole": {
+    "D": 1.5,
+    "depth": 20.5,
+    "x": 33.0,
+    "y": 26.5,
+    "ratio": 13.67
+  },
+  "slot": {
+    "width": 10.0,
+    "depth": 22.0,
+    "length": 30.0,
+    "x": 71.5,
+    "y": 13.5,
+    "ratio": 2.2
+  },
+  "pocket": {
+    "x0": 21.5,
+    "x1": 89.0,
+    "y0": 48.5,
+    "y1": 75.5,
+    "width": 67.5,
+    "height": 27.0,
+    "depth": 10.0,
+    "corner_r": 3.5,
+    "wall": 4.5,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": false,
+  "neg_tol_W": true
+}

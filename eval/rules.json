@@ -1,0 +1,78 @@
+{
+  "thin_wall": {
+    "rule": "Minimum wall between a pocket and the outer edge must be >= 1.0 mm.",
+    "planted_range": "0.3-0.6 mm",
+    "negative_range": "2.0-6.0 mm",
+    "severity": "high",
+    "category": "machinability",
+    "failure_modes": [
+      "chatter_vibration",
+      "wall_deflection_out_of_tolerance",
+      "cracking_under_load",
+      "distortion_after_machining"
+    ]
+  },
+  "sharp_internal_corner": {
+    "rule": "Internal vertical pocket corners need a radius >= 1/3 of pocket depth (R0 cannot be cut with an end mill).",
+    "planted_range": "R0",
+    "negative_range": ">= depth/3, min R1.0",
+    "severity": "high",
+    "category": "machinability",
+    "failure_modes": [
+      "stress_concentration",
+      "fatigue_crack_initiation",
+      "not_machinable_with_end_mill",
+      "requires_edm_high_cost"
+    ]
+  },
+  "deep_small_hole": {
+    "rule": "Blind drilled hole depth must be <= 6x diameter.",
+    "planted_range": "10x-14x D",
+    "negative_range": "2x-3.5x D",
+    "severity": "medium",
+    "category": "machinability",
+    "failure_modes": [
+      "drill_breakage",
+      "hole_drift_runout",
+      "chip_packing",
+      "scrap"
+    ]
+  },
+  "deep_narrow_slot": {
+    "rule": "Slot depth must be <= 4x slot width.",
+    "planted_range": "6x-8x width",
+    "negative_range": "1x-2.5x width",
+    "severity": "medium",
+    "category": "machinability",
+    "failure_modes": [
+      "tool_deflection",
+      "chatter_vibration",
+      "poor_surface_finish",
+      "long_reach_tool_breakage"
+    ]
+  },
+  "overly_tight_tolerance": {
+    "rule": "Non-functional dimensions (e.g. overall outside size) should not be toleranced tighter than +/-0.01 mm.",
+    "planted_range": "+/-0.005 on overall length or width",
+    "negative_range": "+/-0.1 or general tolerance",
+    "severity": "medium",
+    "category": "cost",
+    "failure_modes": [
+      "high_cost",
+      "high_scrap_rate",
+      "extra_inspection_time"
+    ]
+  },
+  "missing_general_tolerance": {
+    "rule": "Title block must state general tolerances when dimensions carry no explicit tolerance.",
+    "planted_range": "general tolerance field left blank",
+    "negative_range": "field filled in",
+    "severity": "high",
+    "category": "drawing_quality",
+    "failure_modes": [
+      "ambiguous_acceptance_criteria",
+      "supplier_dispute",
+      "fit_failure_at_assembly"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "L": 90,
+  "W": 70,
+  "T": 20,
+  "material": "ALUMINUM 7075-T6",
+  "name": "VALVE BODY BLANK",
+  "number": "DFM-EVAL-D21",
+  "rev": "A",
+  "blind_hole": null,
+  "slot": {
+    "width": 8.0,
+    "depth": 12.0,
+    "length": 27.0,
+    "x": 58.5,
+    "y": 12.0,
+    "ratio": 1.5
+  },
+  "pocket": {
+    "x0": 18.0,
+    "x1": 69.0,
+    "y0": 47.0,
+    "y1": 67.5,
+    "width": 51.0,
+    "height": 20.5,
+    "depth": 6.5,
+    "corner_r": 2.5,
+    "wall": 2.5,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": true,
+  "neg_tol_W": true
+}

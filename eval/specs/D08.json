@@ -1,0 +1,43 @@
+{
+  "L": 125,
+  "W": 90,
+  "T": 18,
+  "material": "STAINLESS STEEL 304",
+  "name": "ADAPTER PLATE",
+  "number": "DFM-EVAL-D08",
+  "rev": "A",
+  "blind_hole": {
+    "D": 4.0,
+    "depth": 13.5,
+    "x": 37.5,
+    "y": 29.5,
+    "ratio": 3.38
+  },
+  "slot": {
+    "width": 2.0,
+    "depth": 12.5,
+    "length": 30.0,
+    "x": 81.0,
+    "y": 15.5,
+    "ratio": 6.25
+  },
+  "pocket": {
+    "x0": 20.5,
+    "x1": 105.5,
+    "y0": 61.0,
+    "y1": 86.0,
+    "width": 85.0,
+    "height": 25.0,
+    "depth": 5.5,
+    "corner_r": 2.0,
+    "wall": 4.0,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": true,
+  "neg_tol_W": true
+}

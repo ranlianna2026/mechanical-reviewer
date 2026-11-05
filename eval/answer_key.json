@@ -1,0 +1,2695 @@
+[
+  {
+    "id": "D01",
+    "image": "drawings/D01.png",
+    "part_name": "SENSOR MOUNT PLATE",
+    "part_number": "DFM-EVAL-D01",
+    "material": "STEEL 1018",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 130,
+      "W": 70,
+      "T": 16
+    },
+    "features": {
+      "pocket": {
+        "x0": 21.5,
+        "x1": 112.0,
+        "y0": 54.0,
+        "y1": 67.0,
+        "width": 90.5,
+        "height": 13.0,
+        "depth": 3.5,
+        "corner_r": 0.0,
+        "wall": 3.0
+      },
+      "blind_hole": {
+        "D": 4.0,
+        "depth": 13.0,
+        "x": 39.0,
+        "y": 23.0,
+        "ratio": 3.25
+      },
+      "slot": null,
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D01-I1",
+        "type": "sharp_internal_corner",
+        "value": 0.0,
+        "description": "pocket corners R0 at 3.5 mm depth (specified in notes)",
+        "rule": "Internal vertical pocket corners need a radius >= 1/3 of pocket depth (R0 cannot be cut with an end mill).",
+        "severity": "high",
+        "category": "machinability",
+        "failure_modes": [
+          "stress_concentration",
+          "fatigue_crack_initiation",
+          "not_machinable_with_end_mill",
+          "requires_edm_high_cost"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              357,
+              198,
+              1014,
+              305
+            ]
+          },
+          {
+            "view": "note",
+            "bbox": [
+              72,
+              1248,
+              419,
+              1268
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_small_hole",
+        "feature": "blind_hole",
+        "value": 3.25,
+        "note": "depth/diameter within 6x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 3.0,
+        "note": "wall above 1.0 mm minimum"
+      }
+    ]
+  },
+  {
+    "id": "D02",
+    "image": "drawings/D02.png",
+    "part_name": "MOTOR BRACKET BASE",
+    "part_number": "DFM-EVAL-D02",
+    "material": "STEEL 1018",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 135,
+      "W": 65,
+      "T": 19
+    },
+    "features": {
+      "pocket": {
+        "x0": 18.0,
+        "x1": 114.5,
+        "y0": 39.0,
+        "y1": 62.5,
+        "width": 96.5,
+        "height": 23.5,
+        "depth": 5.5,
+        "corner_r": 2.0,
+        "wall": 2.5
+      },
+      "blind_hole": {
+        "D": 5.0,
+        "depth": 13.0,
+        "x": 40.5,
+        "y": 21.5,
+        "ratio": 2.6
+      },
+      "slot": {
+        "width": 10.0,
+        "depth": 15.5,
+        "length": 30.0,
+        "x": 88.0,
+        "y": 11.0,
+        "ratio": 1.55
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": true,
+    "issues": [],
+    "hard_negatives": [
+      {
+        "type": "deep_small_hole",
+        "feature": "blind_hole",
+        "value": 2.6,
+        "note": "depth/diameter within 6x limit"
+      },
+      {
+        "type": "deep_narrow_slot",
+        "feature": "slot",
+        "value": 1.55,
+        "note": "depth/width within 4x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 2.5,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 2.0,
+        "note": "corner radius >= depth/3 (5.5/3)"
+      },
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D03",
+    "image": "drawings/D03.png",
+    "part_name": "COVER PLATE",
+    "part_number": "DFM-EVAL-D03",
+    "material": "ALUMINUM 6061-T6",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 115,
+      "W": 75,
+      "T": 17
+    },
+    "features": {
+      "pocket": {
+        "x0": 21.0,
+        "x1": 97.5,
+        "y0": 46.0,
+        "y1": 72.5,
+        "width": 76.5,
+        "height": 26.5,
+        "depth": 5.0,
+        "corner_r": 0.0,
+        "wall": 2.5
+      },
+      "blind_hole": {
+        "D": 3.0,
+        "depth": 9.5,
+        "x": 34.5,
+        "y": 25.0,
+        "ratio": 3.17
+      },
+      "slot": {
+        "width": 2.0,
+        "depth": 14.0,
+        "length": 30.0,
+        "x": 75.0,
+        "y": 13.0,
+        "ratio": 7.0
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": false,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D03-I1",
+        "type": "sharp_internal_corner",
+        "value": 0.0,
+        "description": "pocket corners R0 at 5.0 mm depth (specified in notes)",
+        "rule": "Internal vertical pocket corners need a radius >= 1/3 of pocket depth (R0 cannot be cut with an end mill).",
+        "severity": "high",
+        "category": "machinability",
+        "failure_modes": [
+          "stress_concentration",
+          "fatigue_crack_initiation",
+          "not_machinable_with_end_mill",
+          "requires_edm_high_cost"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              354,
+              194,
+              911,
+              397
+            ]
+          },
+          {
+            "view": "note",
+            "bbox": [
+              72,
+              1248,
+              419,
+              1268
+            ]
+          }
+        ]
+      },
+      {
+        "issue_id": "D03-I2",
+        "type": "deep_narrow_slot",
+        "value": 7.0,
+        "description": "2.0 mm slot 14.0 mm deep = 7.0x width",
+        "rule": "Slot depth must be <= 4x slot width.",
+        "severity": "medium",
+        "category": "machinability",
+        "failure_modes": [
+          "tool_deflection",
+          "chatter_vibration",
+          "poor_surface_finish",
+          "long_reach_tool_breakage"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              630,
+              609,
+              858,
+              638
+            ]
+          },
+          {
+            "view": "front",
+            "bbox": [
+              630,
+              859,
+              858,
+              974
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              841,
+              625,
+              1331,
+              670
+            ]
+          }
+        ]
+      },
+      {
+        "issue_id": "D03-I3",
+        "type": "missing_general_tolerance",
+        "value": null,
+        "description": "general tolerance field in title block is blank",
+        "rule": "Title block must state general tolerances when dimensions carry no explicit tolerance.",
+        "severity": "high",
+        "category": "drawing_quality",
+        "failure_modes": [
+          "ambiguous_acceptance_criteria",
+          "supplier_dispute",
+          "fit_failure_at_assembly"
+        ],
+        "regions_px": [
+          {
+            "view": "title_block",
+            "bbox": [
+              1180,
+              1173,
+              1947,
+              1260
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_small_hole",
+        "feature": "blind_hole",
+        "value": 3.17,
+        "note": "depth/diameter within 6x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 2.5,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D04",
+    "image": "drawings/D04.png",
+    "part_name": "MANIFOLD BLOCK",
+    "part_number": "DFM-EVAL-D04",
+    "material": "STAINLESS STEEL 304",
+    "units": "mm",
+    "scale": "1:1",
+    "plate": {
+      "L": 135,
+      "W": 85,
+      "T": 20
+    },
+    "features": {
+      "pocket": {
+        "x0": 22.0,
+        "x1": 113.5,
+        "y0": 74.1,
+        "y1": 84.6,
+        "width": 91.5,
+        "height": 10.5,
+        "depth": 5.5,
+        "corner_r": 2.0,
+        "wall": 0.4
+      },
+      "blind_hole": null,
+      "slot": null,
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D04-I1",
+        "type": "thin_wall",
+        "value": 0.4,
+        "description": "wall 0.4 mm between pocket and top edge",
+        "rule": "Minimum wall between a pocket and the outer edge must be >= 1.0 mm.",
+        "severity": "high",
+        "category": "machinability",
+        "failure_modes": [
+          "chatter_vibration",
+          "wall_deflection_out_of_tolerance",
+          "cracking_under_load",
+          "distortion_after_machining"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              309,
+              167,
+              756,
+              203
+            ]
+          },
+          {
+            "view": "dimension",
+            "bbox": [
+              868,
+              125,
+              889,
+              155
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 2.0,
+        "note": "corner radius >= depth/3 (5.5/3)"
+      }
+    ]
+  },
+  {
+    "id": "D05",
+    "image": "drawings/D05.png",
+    "part_name": "FIXTURE PLATE",
+    "part_number": "DFM-EVAL-D05",
+    "material": "ALUMINUM 6061-T6",
+    "units": "mm",
+    "scale": "1:1",
+    "plate": {
+      "L": 150,
+      "W": 85,
+      "T": 28
+    },
+    "features": {
+      "pocket": {
+        "x0": 17.0,
+        "x1": 128.5,
+        "y0": 63.2,
+        "y1": 84.7,
+        "width": 111.5,
+        "height": 21.5,
+        "depth": 6.5,
+        "corner_r": 0.0,
+        "wall": 0.3
+      },
+      "blind_hole": {
+        "D": 2.0,
+        "depth": 24.5,
+        "x": 45.0,
+        "y": 28.0,
+        "ratio": 12.25
+      },
+      "slot": null,
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D05-I1",
+        "type": "thin_wall",
+        "value": 0.3,
+        "description": "wall 0.3 mm between pocket and top edge",
+        "rule": "Minimum wall between a pocket and the outer edge must be >= 1.0 mm.",
+        "severity": "high",
+        "category": "machinability",
+        "failure_modes": [
+          "chatter_vibration",
+          "wall_deflection_out_of_tolerance",
+          "cracking_under_load",
+          "distortion_after_machining"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              285,
+              167,
+              827,
+              203
+            ]
+          },
+          {
+            "view": "dimension",
+            "bbox": [
+              939,
+              125,
+              960,
+              155
+            ]
+          }
+        ]
+      },
+      {
+        "issue_id": "D05-I2",
+        "type": "sharp_internal_corner",
+        "value": 0.0,
+        "description": "pocket corners R0 at 6.5 mm depth",
+        "rule": "Internal vertical pocket corners need a radius >= 1/3 of pocket depth (R0 cannot be cut with an end mill).",
+        "severity": "high",
+        "category": "machinability",
+        "failure_modes": [
+          "stress_concentration",
+          "fatigue_crack_initiation",
+          "not_machinable_with_end_mill",
+          "requires_edm_high_cost"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              285,
+              178,
+              827,
+              295
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              812,
+              229,
+              1197,
+              288
+            ]
+          }
+        ]
+      },
+      {
+        "issue_id": "D05-I3",
+        "type": "deep_small_hole",
+        "value": 12.25,
+        "description": "Ø2.0 hole 24.5 mm deep = 12.25x D",
+        "rule": "Blind drilled hole depth must be <= 6x diameter.",
+        "severity": "medium",
+        "category": "machinability",
+        "failure_modes": [
+          "drill_breakage",
+          "hole_drift_runout",
+          "chip_packing",
+          "scrap"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              408,
+              436,
+              442,
+              471
+            ]
+          },
+          {
+            "view": "front",
+            "bbox": [
+              408,
+              729,
+              442,
+              863
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              426,
+              429,
+              1171,
+              456
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D06",
+    "image": "drawings/D06.png",
+    "part_name": "ELECTRONICS LID",
+    "part_number": "DFM-EVAL-D06",
+    "material": "STAINLESS STEEL 304",
+    "units": "mm",
+    "scale": "1:1",
+    "plate": {
+      "L": 145,
+      "W": 75,
+      "T": 23
+    },
+    "features": {
+      "pocket": {
+        "x0": 17.5,
+        "x1": 128.5,
+        "y0": 55.0,
+        "y1": 69.5,
+        "width": 111.0,
+        "height": 14.5,
+        "depth": 5.5,
+        "corner_r": 2.0,
+        "wall": 5.5
+      },
+      "blind_hole": null,
+      "slot": {
+        "width": 3.0,
+        "depth": 19.5,
+        "length": 30.0,
+        "x": 94.0,
+        "y": 13.0,
+        "ratio": 6.5
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D06-I1",
+        "type": "deep_narrow_slot",
+        "value": 6.5,
+        "description": "3.0 mm slot 19.5 mm deep = 6.5x width",
+        "rule": "Slot depth must be <= 4x slot width.",
+        "severity": "medium",
+        "category": "machinability",
+        "failure_modes": [
+          "tool_deflection",
+          "chatter_vibration",
+          "poor_surface_finish",
+          "long_reach_tool_breakage"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              578,
+              462,
+              735,
+              492
+            ]
+          },
+          {
+            "view": "front",
+            "bbox": [
+              578,
+              682,
+              735,
+              789
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              718,
+              479,
+              1201,
+              524
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 5.5,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 2.0,
+        "note": "corner radius >= depth/3 (5.5/3)"
+      },
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D07",
+    "image": "drawings/D07.png",
+    "part_name": "CLAMP BLOCK",
+    "part_number": "DFM-EVAL-D07",
+    "material": "ALUMINUM 6061-T6",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 120,
+      "W": 55,
+      "T": 18
+    },
+    "features": {
+      "pocket": {
+        "x0": 19.5,
+        "x1": 104.0,
+        "y0": 41.5,
+        "y1": 53.0,
+        "width": 84.5,
+        "height": 11.5,
+        "depth": 8.0,
+        "corner_r": 3.0,
+        "wall": 2.0
+      },
+      "blind_hole": {
+        "D": 4.0,
+        "depth": 9.5,
+        "x": 36.0,
+        "y": 18.0,
+        "ratio": 2.38
+      },
+      "slot": {
+        "width": 10.0,
+        "depth": 13.0,
+        "length": 30.0,
+        "x": 78.0,
+        "y": 9.5,
+        "ratio": 1.3
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D07-I1",
+        "type": "overly_tight_tolerance",
+        "value": "+/-0.005",
+        "description": "overall length toleranced +/-0.005",
+        "rule": "Non-functional dimensions (e.g. overall outside size) should not be toleranced tighter than +/-0.01 mm.",
+        "severity": "medium",
+        "category": "cost",
+        "failure_modes": [
+          "high_cost",
+          "high_scrap_rate",
+          "extra_inspection_time"
+        ],
+        "regions_px": [
+          {
+            "view": "dimension",
+            "bbox": [
+              577,
+              78,
+              698,
+              99
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_small_hole",
+        "feature": "blind_hole",
+        "value": 2.38,
+        "note": "depth/diameter within 6x limit"
+      },
+      {
+        "type": "deep_narrow_slot",
+        "feature": "slot",
+        "value": 1.3,
+        "note": "depth/width within 4x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 2.0,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 3.0,
+        "note": "corner radius >= depth/3 (8.0/3)"
+      }
+    ]
+  },
+  {
+    "id": "D08",
+    "image": "drawings/D08.png",
+    "part_name": "ADAPTER PLATE",
+    "part_number": "DFM-EVAL-D08",
+    "material": "STAINLESS STEEL 304",
+    "units": "mm",
+    "scale": "1:1",
+    "plate": {
+      "L": 125,
+      "W": 90,
+      "T": 18
+    },
+    "features": {
+      "pocket": {
+        "x0": 20.5,
+        "x1": 105.5,
+        "y0": 61.0,
+        "y1": 86.0,
+        "width": 85.0,
+        "height": 25.0,
+        "depth": 5.5,
+        "corner_r": 2.0,
+        "wall": 4.0
+      },
+      "blind_hole": {
+        "D": 4.0,
+        "depth": 13.5,
+        "x": 37.5,
+        "y": 29.5,
+        "ratio": 3.38
+      },
+      "slot": {
+        "width": 2.0,
+        "depth": 12.5,
+        "length": 30.0,
+        "x": 81.0,
+        "y": 15.5,
+        "ratio": 6.25
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D08-I1",
+        "type": "deep_narrow_slot",
+        "value": 6.25,
+        "description": "2.0 mm slot 12.5 mm deep = 6.25x width",
+        "rule": "Slot depth must be <= 4x slot width.",
+        "severity": "medium",
+        "category": "machinability",
+        "failure_modes": [
+          "tool_deflection",
+          "chatter_vibration",
+          "poor_surface_finish",
+          "long_reach_tool_breakage"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              517,
+              524,
+              674,
+              548
+            ]
+          },
+          {
+            "view": "front",
+            "bbox": [
+              517,
+              753,
+              674,
+              827
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              659,
+              535,
+              1106,
+              583
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_small_hole",
+        "feature": "blind_hole",
+        "value": 3.38,
+        "note": "depth/diameter within 6x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 4.0,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 2.0,
+        "note": "corner radius >= depth/3 (5.5/3)"
+      },
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D09",
+    "image": "drawings/D09.png",
+    "part_name": "VALVE BODY BLANK",
+    "part_number": "DFM-EVAL-D09",
+    "material": "STAINLESS STEEL 304",
+    "units": "mm",
+    "scale": "1:1",
+    "plate": {
+      "L": 80,
+      "W": 65,
+      "T": 29
+    },
+    "features": {
+      "pocket": {
+        "x0": 18.0,
+        "x1": 63.5,
+        "y0": 43.0,
+        "y1": 61.0,
+        "width": 45.5,
+        "height": 18.0,
+        "depth": 8.0,
+        "corner_r": 3.0,
+        "wall": 4.0
+      },
+      "blind_hole": {
+        "D": 2.0,
+        "depth": 25.5,
+        "x": 24.0,
+        "y": 21.5,
+        "ratio": 12.75
+      },
+      "slot": {
+        "width": 10.0,
+        "depth": 16.5,
+        "length": 24.0,
+        "x": 52.0,
+        "y": 11.0,
+        "ratio": 1.65
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D09-I1",
+        "type": "deep_small_hole",
+        "value": 12.75,
+        "description": "Ø2.0 hole 25.5 mm deep = 12.75x D",
+        "rule": "Blind drilled hole depth must be <= 6x diameter.",
+        "severity": "medium",
+        "category": "machinability",
+        "failure_modes": [
+          "drill_breakage",
+          "hole_drift_runout",
+          "chip_packing",
+          "scrap"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              309,
+              373,
+              343,
+              407
+            ]
+          },
+          {
+            "view": "front",
+            "bbox": [
+              309,
+              635,
+              343,
+              773
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              327,
+              365,
+              841,
+              392
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_narrow_slot",
+        "feature": "slot",
+        "value": 1.65,
+        "note": "depth/width within 4x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 4.0,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 3.0,
+        "note": "corner radius >= depth/3 (8.0/3)"
+      },
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D10",
+    "image": "drawings/D10.png",
+    "part_name": "GEARBOX COVER",
+    "part_number": "DFM-EVAL-D10",
+    "material": "STEEL 1018",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 90,
+      "W": 55,
+      "T": 30
+    },
+    "features": {
+      "pocket": {
+        "x0": 22.0,
+        "x1": 72.0,
+        "y0": 36.5,
+        "y1": 53.0,
+        "width": 50.0,
+        "height": 16.5,
+        "depth": 9.5,
+        "corner_r": 3.5,
+        "wall": 2.0
+      },
+      "blind_hole": {
+        "D": 2.0,
+        "depth": 27.0,
+        "x": 27.0,
+        "y": 18.0,
+        "ratio": 13.5
+      },
+      "slot": null,
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D10-I1",
+        "type": "deep_small_hole",
+        "value": 13.5,
+        "description": "Ø2.0 hole 27.0 mm deep = 13.5x D",
+        "rule": "Blind drilled hole depth must be <= 6x diameter.",
+        "severity": "medium",
+        "category": "machinability",
+        "failure_modes": [
+          "drill_breakage",
+          "hole_drift_runout",
+          "chip_packing",
+          "scrap"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              382,
+              425,
+              426,
+              468
+            ]
+          },
+          {
+            "view": "front",
+            "bbox": [
+              382,
+              718,
+              426,
+              928
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              406,
+              422,
+              1100,
+              447
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 2.0,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 3.5,
+        "note": "corner radius >= depth/3 (9.5/3)"
+      },
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D11",
+    "image": "drawings/D11.png",
+    "part_name": "CAMERA MOUNT",
+    "part_number": "DFM-EVAL-D11",
+    "material": "ALUMINUM 7075-T6",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 85,
+      "W": 75,
+      "T": 16
+    },
+    "features": {
+      "pocket": {
+        "x0": 19.0,
+        "x1": 68.0,
+        "y0": 47.5,
+        "y1": 72.5,
+        "width": 49.0,
+        "height": 25.0,
+        "depth": 3.5,
+        "corner_r": 1.5,
+        "wall": 2.5
+      },
+      "blind_hole": {
+        "D": 3.0,
+        "depth": 10.0,
+        "x": 25.5,
+        "y": 25.0,
+        "ratio": 3.33
+      },
+      "slot": {
+        "width": 8.0,
+        "depth": 13.0,
+        "length": 25.0,
+        "x": 55.0,
+        "y": 13.0,
+        "ratio": 1.62
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": true,
+    "issues": [],
+    "hard_negatives": [
+      {
+        "type": "deep_small_hole",
+        "feature": "blind_hole",
+        "value": 3.33,
+        "note": "depth/diameter within 6x limit"
+      },
+      {
+        "type": "deep_narrow_slot",
+        "feature": "slot",
+        "value": 1.62,
+        "note": "depth/width within 4x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 2.5,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 1.5,
+        "note": "corner radius >= depth/3 (3.5/3)"
+      },
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D12",
+    "image": "drawings/D12.png",
+    "part_name": "PUMP BASE PLATE",
+    "part_number": "DFM-EVAL-D12",
+    "material": "STEEL 1018",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 115,
+      "W": 60,
+      "T": 20
+    },
+    "features": {
+      "pocket": {
+        "x0": 19.5,
+        "x1": 93.0,
+        "y0": 43.7,
+        "y1": 59.7,
+        "width": 73.5,
+        "height": 16.0,
+        "depth": 9.0,
+        "corner_r": 3.0,
+        "wall": 0.3
+      },
+      "blind_hole": null,
+      "slot": {
+        "width": 8.0,
+        "depth": 16.5,
+        "length": 30.0,
+        "x": 75.0,
+        "y": 10.0,
+        "ratio": 2.06
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D12-I1",
+        "type": "thin_wall",
+        "value": 0.3,
+        "description": "wall 0.3 mm between pocket and top edge",
+        "rule": "Minimum wall between a pocket and the outer edge must be >= 1.0 mm.",
+        "severity": "high",
+        "category": "machinability",
+        "failure_modes": [
+          "chatter_vibration",
+          "wall_deflection_out_of_tolerance",
+          "cracking_under_load",
+          "distortion_after_machining"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              343,
+              167,
+              879,
+              203
+            ]
+          },
+          {
+            "view": "dimension",
+            "bbox": [
+              1045,
+              125,
+              1066,
+              155
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_narrow_slot",
+        "feature": "slot",
+        "value": 2.06,
+        "note": "depth/width within 4x limit"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 3.0,
+        "note": "corner radius >= depth/3 (9.0/3)"
+      }
+    ]
+  },
+  {
+    "id": "D13",
+    "image": "drawings/D13.png",
+    "part_name": "SENSOR MOUNT PLATE",
+    "part_number": "DFM-EVAL-D13",
+    "material": "ALUMINUM 7075-T6",
+    "units": "mm",
+    "scale": "1:1",
+    "plate": {
+      "L": 140,
+      "W": 80,
+      "T": 21
+    },
+    "features": {
+      "pocket": {
+        "x0": 18.5,
+        "x1": 122.5,
+        "y0": 51.5,
+        "y1": 74.5,
+        "width": 104.0,
+        "height": 23.0,
+        "depth": 5.5,
+        "corner_r": 2.0,
+        "wall": 5.5
+      },
+      "blind_hole": null,
+      "slot": {
+        "width": 10.0,
+        "depth": 18.0,
+        "length": 30.0,
+        "x": 91.0,
+        "y": 13.5,
+        "ratio": 1.8
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": true,
+    "issues": [],
+    "hard_negatives": [
+      {
+        "type": "deep_narrow_slot",
+        "feature": "slot",
+        "value": 1.8,
+        "note": "depth/width within 4x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 5.5,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 2.0,
+        "note": "corner radius >= depth/3 (5.5/3)"
+      },
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D14",
+    "image": "drawings/D14.png",
+    "part_name": "MOTOR BRACKET BASE",
+    "part_number": "DFM-EVAL-D14",
+    "material": "ALUMINUM 7075-T6",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 115,
+      "W": 55,
+      "T": 18
+    },
+    "features": {
+      "pocket": {
+        "x0": 19.5,
+        "x1": 97.0,
+        "y0": 37.5,
+        "y1": 50.0,
+        "width": 77.5,
+        "height": 12.5,
+        "depth": 9.5,
+        "corner_r": 3.5,
+        "wall": 5.0
+      },
+      "blind_hole": {
+        "D": 6.0,
+        "depth": 14.5,
+        "x": 34.5,
+        "y": 18.0,
+        "ratio": 2.42
+      },
+      "slot": {
+        "width": 10.0,
+        "depth": 10.0,
+        "length": 30.0,
+        "x": 75.0,
+        "y": 9.5,
+        "ratio": 1.0
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": false,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D14-I1",
+        "type": "missing_general_tolerance",
+        "value": null,
+        "description": "general tolerance field in title block is blank",
+        "rule": "Title block must state general tolerances when dimensions carry no explicit tolerance.",
+        "severity": "high",
+        "category": "drawing_quality",
+        "failure_modes": [
+          "ambiguous_acceptance_criteria",
+          "supplier_dispute",
+          "fit_failure_at_assembly"
+        ],
+        "regions_px": [
+          {
+            "view": "title_block",
+            "bbox": [
+              1180,
+              1173,
+              1947,
+              1260
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_small_hole",
+        "feature": "blind_hole",
+        "value": 2.42,
+        "note": "depth/diameter within 6x limit"
+      },
+      {
+        "type": "deep_narrow_slot",
+        "feature": "slot",
+        "value": 1.0,
+        "note": "depth/width within 4x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 5.0,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 3.5,
+        "note": "corner radius >= depth/3 (9.5/3)"
+      }
+    ]
+  },
+  {
+    "id": "D15",
+    "image": "drawings/D15.png",
+    "part_name": "COVER PLATE",
+    "part_number": "DFM-EVAL-D15",
+    "material": "STEEL 1018",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 105,
+      "W": 60,
+      "T": 22
+    },
+    "features": {
+      "pocket": {
+        "x0": 17.5,
+        "x1": 84.0,
+        "y0": 37.0,
+        "y1": 57.0,
+        "width": 66.5,
+        "height": 20.0,
+        "depth": 7.5,
+        "corner_r": 2.5,
+        "wall": 3.0
+      },
+      "blind_hole": null,
+      "slot": {
+        "width": 8.0,
+        "depth": 19.0,
+        "length": 30.0,
+        "x": 68.0,
+        "y": 10.0,
+        "ratio": 2.38
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D15-I1",
+        "type": "overly_tight_tolerance",
+        "value": "+/-0.005",
+        "description": "overall width toleranced +/-0.005",
+        "rule": "Non-functional dimensions (e.g. overall outside size) should not be toleranced tighter than +/-0.01 mm.",
+        "severity": "medium",
+        "category": "cost",
+        "failure_modes": [
+          "high_cost",
+          "high_scrap_rate",
+          "extra_inspection_time"
+        ],
+        "regions_px": [
+          {
+            "view": "dimension",
+            "bbox": [
+              125,
+              340,
+              146,
+              453
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_narrow_slot",
+        "feature": "slot",
+        "value": 2.38,
+        "note": "depth/width within 4x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 3.0,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 2.5,
+        "note": "corner radius >= depth/3 (7.5/3)"
+      }
+    ]
+  },
+  {
+    "id": "D16",
+    "image": "drawings/D16.png",
+    "part_name": "MANIFOLD BLOCK",
+    "part_number": "DFM-EVAL-D16",
+    "material": "ALUMINUM 7075-T6",
+    "units": "mm",
+    "scale": "1:1",
+    "plate": {
+      "L": 85,
+      "W": 90,
+      "T": 20
+    },
+    "features": {
+      "pocket": {
+        "x0": 21.0,
+        "x1": 63.0,
+        "y0": 50.5,
+        "y1": 84.5,
+        "width": 42.0,
+        "height": 34.0,
+        "depth": 7.0,
+        "corner_r": 2.5,
+        "wall": 5.5
+      },
+      "blind_hole": {
+        "D": 5.0,
+        "depth": 12.0,
+        "x": 25.5,
+        "y": 29.5,
+        "ratio": 2.4
+      },
+      "slot": null,
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": true,
+    "issues": [],
+    "hard_negatives": [
+      {
+        "type": "deep_small_hole",
+        "feature": "blind_hole",
+        "value": 2.4,
+        "note": "depth/diameter within 6x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 5.5,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 2.5,
+        "note": "corner radius >= depth/3 (7.0/3)"
+      }
+    ]
+  },
+  {
+    "id": "D17",
+    "image": "drawings/D17.png",
+    "part_name": "FIXTURE PLATE",
+    "part_number": "DFM-EVAL-D17",
+    "material": "STEEL 1018",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 125,
+      "W": 70,
+      "T": 15
+    },
+    "features": {
+      "pocket": {
+        "x0": 21.0,
+        "x1": 105.5,
+        "y0": 51.5,
+        "y1": 64.5,
+        "width": 84.5,
+        "height": 13.0,
+        "depth": 4.0,
+        "corner_r": 1.5,
+        "wall": 5.5
+      },
+      "blind_hole": {
+        "D": 4.0,
+        "depth": 9.0,
+        "x": 37.5,
+        "y": 23.0,
+        "ratio": 2.25
+      },
+      "slot": null,
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": false,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D17-I1",
+        "type": "missing_general_tolerance",
+        "value": null,
+        "description": "general tolerance field in title block is blank",
+        "rule": "Title block must state general tolerances when dimensions carry no explicit tolerance.",
+        "severity": "high",
+        "category": "drawing_quality",
+        "failure_modes": [
+          "ambiguous_acceptance_criteria",
+          "supplier_dispute",
+          "fit_failure_at_assembly"
+        ],
+        "regions_px": [
+          {
+            "view": "title_block",
+            "bbox": [
+              1180,
+              1173,
+              1947,
+              1260
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_small_hole",
+        "feature": "blind_hole",
+        "value": 2.25,
+        "note": "depth/diameter within 6x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 5.5,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 1.5,
+        "note": "corner radius >= depth/3 (4.0/3)"
+      },
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D18",
+    "image": "drawings/D18.png",
+    "part_name": "ELECTRONICS LID",
+    "part_number": "DFM-EVAL-D18",
+    "material": "ALUMINUM 7075-T6",
+    "units": "mm",
+    "scale": "1:1",
+    "plate": {
+      "L": 110,
+      "W": 85,
+      "T": 22
+    },
+    "features": {
+      "pocket": {
+        "x0": 18.0,
+        "x1": 92.5,
+        "y0": 60.1,
+        "y1": 84.6,
+        "width": 74.5,
+        "height": 24.5,
+        "depth": 4.5,
+        "corner_r": 1.5,
+        "wall": 0.4
+      },
+      "blind_hole": null,
+      "slot": {
+        "width": 3.0,
+        "depth": 19.0,
+        "length": 30.0,
+        "x": 71.5,
+        "y": 14.5,
+        "ratio": 6.33
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D18-I1",
+        "type": "thin_wall",
+        "value": 0.4,
+        "description": "wall 0.4 mm between pocket and top edge",
+        "rule": "Minimum wall between a pocket and the outer edge must be >= 1.0 mm.",
+        "severity": "high",
+        "category": "machinability",
+        "failure_modes": [
+          "chatter_vibration",
+          "wall_deflection_out_of_tolerance",
+          "cracking_under_load",
+          "distortion_after_machining"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              290,
+              167,
+              657,
+              203
+            ]
+          },
+          {
+            "view": "dimension",
+            "bbox": [
+              750,
+              125,
+              771,
+              155
+            ]
+          }
+        ]
+      },
+      {
+        "issue_id": "D18-I2",
+        "type": "deep_narrow_slot",
+        "value": 6.33,
+        "description": "3.0 mm slot 19.0 mm deep = 6.33x width",
+        "rule": "Slot depth must be <= 4x slot width.",
+        "severity": "medium",
+        "category": "machinability",
+        "failure_modes": [
+          "tool_deflection",
+          "chatter_vibration",
+          "poor_surface_finish",
+          "long_reach_tool_breakage"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              472,
+              503,
+              629,
+              532
+            ]
+          },
+          {
+            "view": "front",
+            "bbox": [
+              472,
+              729,
+              629,
+              834
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              612,
+              519,
+              1035,
+              564
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 1.5,
+        "note": "corner radius >= depth/3 (4.5/3)"
+      }
+    ]
+  },
+  {
+    "id": "D19",
+    "image": "drawings/D19.png",
+    "part_name": "CLAMP BLOCK",
+    "part_number": "DFM-EVAL-D19",
+    "material": "STAINLESS STEEL 304",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 90,
+      "W": 65,
+      "T": 18
+    },
+    "features": {
+      "pocket": {
+        "x0": 21.0,
+        "x1": 69.0,
+        "y0": 44.5,
+        "y1": 62.5,
+        "width": 48.0,
+        "height": 18.0,
+        "depth": 3.5,
+        "corner_r": 0.0,
+        "wall": 2.5
+      },
+      "blind_hole": null,
+      "slot": null,
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D19-I1",
+        "type": "sharp_internal_corner",
+        "value": 0.0,
+        "description": "pocket corners R0 at 3.5 mm depth",
+        "rule": "Internal vertical pocket corners need a radius >= 1/3 of pocket depth (R0 cannot be cut with an end mill).",
+        "severity": "high",
+        "category": "machinability",
+        "failure_modes": [
+          "stress_concentration",
+          "fatigue_crack_initiation",
+          "not_machinable_with_end_mill",
+          "requires_edm_high_cost"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              354,
+              194,
+              709,
+              337
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              694,
+              258,
+              1117,
+              330
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 2.5,
+        "note": "wall above 1.0 mm minimum"
+      }
+    ]
+  },
+  {
+    "id": "D20",
+    "image": "drawings/D20.png",
+    "part_name": "ADAPTER PLATE",
+    "part_number": "DFM-EVAL-D20",
+    "material": "ALUMINUM 7075-T6",
+    "units": "mm",
+    "scale": "1:1",
+    "plate": {
+      "L": 110,
+      "W": 80,
+      "T": 25
+    },
+    "features": {
+      "pocket": {
+        "x0": 21.5,
+        "x1": 89.0,
+        "y0": 48.5,
+        "y1": 75.5,
+        "width": 67.5,
+        "height": 27.0,
+        "depth": 10.0,
+        "corner_r": 3.5,
+        "wall": 4.5
+      },
+      "blind_hole": {
+        "D": 1.5,
+        "depth": 20.5,
+        "x": 33.0,
+        "y": 26.5,
+        "ratio": 13.67
+      },
+      "slot": {
+        "width": 10.0,
+        "depth": 22.0,
+        "length": 30.0,
+        "x": 71.5,
+        "y": 13.5,
+        "ratio": 2.2
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": false,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D20-I1",
+        "type": "deep_small_hole",
+        "value": 13.67,
+        "description": "Ø1.5 hole 20.5 mm deep = 13.67x D",
+        "rule": "Blind drilled hole depth must be <= 6x diameter.",
+        "severity": "medium",
+        "category": "machinability",
+        "failure_modes": [
+          "drill_breakage",
+          "hole_drift_runout",
+          "chip_packing",
+          "scrap"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              354,
+              422,
+              383,
+              452
+            ]
+          },
+          {
+            "view": "front",
+            "bbox": [
+              354,
+              706,
+              383,
+              820
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              368,
+              412,
+              982,
+              440
+            ]
+          }
+        ]
+      },
+      {
+        "issue_id": "D20-I2",
+        "type": "missing_general_tolerance",
+        "value": null,
+        "description": "general tolerance field in title block is blank",
+        "rule": "Title block must state general tolerances when dimensions carry no explicit tolerance.",
+        "severity": "high",
+        "category": "drawing_quality",
+        "failure_modes": [
+          "ambiguous_acceptance_criteria",
+          "supplier_dispute",
+          "fit_failure_at_assembly"
+        ],
+        "regions_px": [
+          {
+            "view": "title_block",
+            "bbox": [
+              1180,
+              1173,
+              1947,
+              1260
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_narrow_slot",
+        "feature": "slot",
+        "value": 2.2,
+        "note": "depth/width within 4x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 4.5,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 3.5,
+        "note": "corner radius >= depth/3 (10.0/3)"
+      },
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D21",
+    "image": "drawings/D21.png",
+    "part_name": "VALVE BODY BLANK",
+    "part_number": "DFM-EVAL-D21",
+    "material": "ALUMINUM 7075-T6",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 90,
+      "W": 70,
+      "T": 20
+    },
+    "features": {
+      "pocket": {
+        "x0": 18.0,
+        "x1": 69.0,
+        "y0": 47.0,
+        "y1": 67.5,
+        "width": 51.0,
+        "height": 20.5,
+        "depth": 6.5,
+        "corner_r": 2.5,
+        "wall": 2.5
+      },
+      "blind_hole": null,
+      "slot": {
+        "width": 8.0,
+        "depth": 12.0,
+        "length": 27.0,
+        "x": 58.5,
+        "y": 12.0,
+        "ratio": 1.5
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": true,
+    "issues": [],
+    "hard_negatives": [
+      {
+        "type": "deep_narrow_slot",
+        "feature": "slot",
+        "value": 1.5,
+        "note": "depth/width within 4x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 2.5,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 2.5,
+        "note": "corner radius >= depth/3 (6.5/3)"
+      },
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D22",
+    "image": "drawings/D22.png",
+    "part_name": "GEARBOX COVER",
+    "part_number": "DFM-EVAL-D22",
+    "material": "STEEL 1018",
+    "units": "mm",
+    "scale": "1:1",
+    "plate": {
+      "L": 90,
+      "W": 85,
+      "T": 22
+    },
+    "features": {
+      "pocket": {
+        "x0": 18.5,
+        "x1": 69.5,
+        "y0": 60.1,
+        "y1": 84.6,
+        "width": 51.0,
+        "height": 24.5,
+        "depth": 6.5,
+        "corner_r": 2.5,
+        "wall": 0.4
+      },
+      "blind_hole": {
+        "D": 6.0,
+        "depth": 18.0,
+        "x": 27.0,
+        "y": 28.0,
+        "ratio": 3.0
+      },
+      "slot": {
+        "width": 8.0,
+        "depth": 18.5,
+        "length": 27.0,
+        "x": 58.5,
+        "y": 14.5,
+        "ratio": 2.31
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D22-I1",
+        "type": "thin_wall",
+        "value": 0.4,
+        "description": "wall 0.4 mm between pocket and top edge",
+        "rule": "Minimum wall between a pocket and the outer edge must be >= 1.0 mm.",
+        "severity": "high",
+        "category": "machinability",
+        "failure_modes": [
+          "chatter_vibration",
+          "wall_deflection_out_of_tolerance",
+          "cracking_under_load",
+          "distortion_after_machining"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              292,
+              167,
+              548,
+              203
+            ]
+          },
+          {
+            "view": "dimension",
+            "bbox": [
+              656,
+              125,
+              677,
+              155
+            ]
+          }
+        ]
+      },
+      {
+        "issue_id": "D22-I2",
+        "type": "overly_tight_tolerance",
+        "value": "+/-0.005",
+        "description": "overall width toleranced +/-0.005",
+        "rule": "Non-functional dimensions (e.g. overall outside size) should not be toleranced tighter than +/-0.01 mm.",
+        "severity": "medium",
+        "category": "cost",
+        "failure_modes": [
+          "high_cost",
+          "high_scrap_rate",
+          "extra_inspection_time"
+        ],
+        "regions_px": [
+          {
+            "view": "dimension",
+            "bbox": [
+              125,
+              329,
+              146,
+              441
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_small_hole",
+        "feature": "blind_hole",
+        "value": 3.0,
+        "note": "depth/diameter within 6x limit"
+      },
+      {
+        "type": "deep_narrow_slot",
+        "feature": "slot",
+        "value": 2.31,
+        "note": "depth/width within 4x limit"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 2.5,
+        "note": "corner radius >= depth/3 (6.5/3)"
+      }
+    ]
+  },
+  {
+    "id": "D23",
+    "image": "drawings/D23.png",
+    "part_name": "CAMERA MOUNT",
+    "part_number": "DFM-EVAL-D23",
+    "material": "ALUMINUM 7075-T6",
+    "units": "mm",
+    "scale": "1:1",
+    "plate": {
+      "L": 145,
+      "W": 85,
+      "T": 20
+    },
+    "features": {
+      "pocket": {
+        "x0": 18.0,
+        "x1": 129.0,
+        "y0": 69.5,
+        "y1": 79.5,
+        "width": 111.0,
+        "height": 10.0,
+        "depth": 8.5,
+        "corner_r": 3.0,
+        "wall": 5.5
+      },
+      "blind_hole": {
+        "D": 5.0,
+        "depth": 15.5,
+        "x": 43.5,
+        "y": 28.0,
+        "ratio": 3.1
+      },
+      "slot": {
+        "width": 2.0,
+        "depth": 13.0,
+        "length": 30.0,
+        "x": 94.0,
+        "y": 14.5,
+        "ratio": 6.5
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": false,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D23-I1",
+        "type": "deep_narrow_slot",
+        "value": 6.5,
+        "description": "2.0 mm slot 13.0 mm deep = 6.5x width",
+        "rule": "Slot depth must be <= 4x slot width.",
+        "severity": "medium",
+        "category": "machinability",
+        "failure_modes": [
+          "tool_deflection",
+          "chatter_vibration",
+          "poor_surface_finish",
+          "long_reach_tool_breakage"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              578,
+              505,
+              735,
+              530
+            ]
+          },
+          {
+            "view": "front",
+            "bbox": [
+              578,
+              729,
+              735,
+              806
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              720,
+              517,
+              1201,
+              564
+            ]
+          }
+        ]
+      },
+      {
+        "issue_id": "D23-I2",
+        "type": "missing_general_tolerance",
+        "value": null,
+        "description": "general tolerance field in title block is blank",
+        "rule": "Title block must state general tolerances when dimensions carry no explicit tolerance.",
+        "severity": "high",
+        "category": "drawing_quality",
+        "failure_modes": [
+          "ambiguous_acceptance_criteria",
+          "supplier_dispute",
+          "fit_failure_at_assembly"
+        ],
+        "regions_px": [
+          {
+            "view": "title_block",
+            "bbox": [
+              1180,
+              1173,
+              1947,
+              1260
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_small_hole",
+        "feature": "blind_hole",
+        "value": 3.1,
+        "note": "depth/diameter within 6x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 5.5,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 3.0,
+        "note": "corner radius >= depth/3 (8.5/3)"
+      },
+      {
+        "type": "overly_tight_tolerance",
+        "feature": "overall_width",
+        "value": "+/-0.1",
+        "note": "ordinary tolerance on overall width"
+      }
+    ]
+  },
+  {
+    "id": "D24",
+    "image": "drawings/D24.png",
+    "part_name": "PUMP BASE PLATE",
+    "part_number": "DFM-EVAL-D24",
+    "material": "STEEL 1018",
+    "units": "mm",
+    "scale": "1:1",
+    "plate": {
+      "L": 110,
+      "W": 75,
+      "T": 22
+    },
+    "features": {
+      "pocket": {
+        "x0": 21.5,
+        "x1": 91.0,
+        "y0": 56.5,
+        "y1": 69.0,
+        "width": 69.5,
+        "height": 12.5,
+        "depth": 6.0,
+        "corner_r": 0.0,
+        "wall": 6.0
+      },
+      "blind_hole": {
+        "D": 3.0,
+        "depth": 9.5,
+        "x": 33.0,
+        "y": 25.0,
+        "ratio": 3.17
+      },
+      "slot": {
+        "width": 8.0,
+        "depth": 18.5,
+        "length": 30.0,
+        "x": 71.5,
+        "y": 13.0,
+        "ratio": 2.31
+      },
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D24-I1",
+        "type": "sharp_internal_corner",
+        "value": 0.0,
+        "description": "pocket corners R0 at 6.0 mm depth",
+        "rule": "Internal vertical pocket corners need a radius >= 1/3 of pocket depth (R0 cannot be cut with an end mill).",
+        "severity": "high",
+        "category": "machinability",
+        "failure_modes": [
+          "stress_concentration",
+          "fatigue_crack_initiation",
+          "not_machinable_with_end_mill",
+          "requires_edm_high_cost"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              307,
+              205,
+              650,
+              279
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              635,
+              234,
+              999,
+              288
+            ]
+          }
+        ]
+      },
+      {
+        "issue_id": "D24-I2",
+        "type": "overly_tight_tolerance",
+        "value": "+/-0.005",
+        "description": "overall length toleranced +/-0.005",
+        "rule": "Non-functional dimensions (e.g. overall outside size) should not be toleranced tighter than +/-0.01 mm.",
+        "severity": "medium",
+        "category": "cost",
+        "failure_modes": [
+          "high_cost",
+          "high_scrap_rate",
+          "extra_inspection_time"
+        ],
+        "regions_px": [
+          {
+            "view": "dimension",
+            "bbox": [
+              412,
+              78,
+              533,
+              99
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "deep_small_hole",
+        "feature": "blind_hole",
+        "value": 3.17,
+        "note": "depth/diameter within 6x limit"
+      },
+      {
+        "type": "deep_narrow_slot",
+        "feature": "slot",
+        "value": 2.31,
+        "note": "depth/width within 4x limit"
+      },
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 6.0,
+        "note": "wall above 1.0 mm minimum"
+      }
+    ]
+  },
+  {
+    "id": "D25",
+    "image": "drawings/D25.png",
+    "part_name": "SENSOR MOUNT PLATE",
+    "part_number": "DFM-EVAL-D25",
+    "material": "ALUMINUM 7075-T6",
+    "units": "mm",
+    "scale": "1.5:1",
+    "plate": {
+      "L": 105,
+      "W": 60,
+      "T": 24
+    },
+    "features": {
+      "pocket": {
+        "x0": 21.5,
+        "x1": 84.5,
+        "y0": 45.5,
+        "y1": 57.0,
+        "width": 63.0,
+        "height": 11.5,
+        "depth": 5.5,
+        "corner_r": 2.0,
+        "wall": 3.0
+      },
+      "blind_hole": {
+        "D": 1.5,
+        "depth": 20.5,
+        "x": 31.5,
+        "y": 20.0,
+        "ratio": 13.67
+      },
+      "slot": null,
+      "mount_holes": {
+        "D": 6.6,
+        "inset": 8.0
+      }
+    },
+    "general_tolerance_present": true,
+    "is_clean": false,
+    "issues": [
+      {
+        "issue_id": "D25-I1",
+        "type": "deep_small_hole",
+        "value": 13.67,
+        "description": "Ø1.5 hole 20.5 mm deep = 13.67x D",
+        "rule": "Blind drilled hole depth must be <= 6x diameter.",
+        "severity": "medium",
+        "category": "machinability",
+        "failure_modes": [
+          "drill_breakage",
+          "hole_drift_runout",
+          "chip_packing",
+          "scrap"
+        ],
+        "regions_px": [
+          {
+            "view": "top",
+            "bbox": [
+              418,
+              449,
+              454,
+              486
+            ]
+          },
+          {
+            "view": "front",
+            "bbox": [
+              418,
+              753,
+              454,
+              917
+            ]
+          },
+          {
+            "view": "callout",
+            "bbox": [
+              437,
+              443,
+              1207,
+              470
+            ]
+          }
+        ]
+      },
+      {
+        "issue_id": "D25-I2",
+        "type": "overly_tight_tolerance",
+        "value": "+/-0.005",
+        "description": "overall width toleranced +/-0.005",
+        "rule": "Non-functional dimensions (e.g. overall outside size) should not be toleranced tighter than +/-0.01 mm.",
+        "severity": "medium",
+        "category": "cost",
+        "failure_modes": [
+          "high_cost",
+          "high_scrap_rate",
+          "extra_inspection_time"
+        ],
+        "regions_px": [
+          {
+            "view": "dimension",
+            "bbox": [
+              125,
+              340,
+              146,
+              453
+            ]
+          }
+        ]
+      }
+    ],
+    "hard_negatives": [
+      {
+        "type": "thin_wall",
+        "feature": "pocket",
+        "value": 3.0,
+        "note": "wall above 1.0 mm minimum"
+      },
+      {
+        "type": "sharp_internal_corner",
+        "feature": "pocket",
+        "value": 2.0,
+        "note": "corner radius >= depth/3 (5.5/3)"
+      }
+    ]
+  }
+]

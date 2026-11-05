@@ -1,0 +1,37 @@
+{
+  "L": 140,
+  "W": 80,
+  "T": 21,
+  "material": "ALUMINUM 7075-T6",
+  "name": "SENSOR MOUNT PLATE",
+  "number": "DFM-EVAL-D13",
+  "rev": "A",
+  "blind_hole": null,
+  "slot": {
+    "width": 10.0,
+    "depth": 18.0,
+    "length": 30.0,
+    "x": 91.0,
+    "y": 13.5,
+    "ratio": 1.8
+  },
+  "pocket": {
+    "x0": 18.5,
+    "x1": 122.5,
+    "y0": 51.5,
+    "y1": 74.5,
+    "width": 104.0,
+    "height": 23.0,
+    "depth": 5.5,
+    "corner_r": 2.0,
+    "wall": 5.5,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": true,
+  "neg_tol_W": true
+}

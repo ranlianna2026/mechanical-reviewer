@@ -1,0 +1,36 @@
+{
+  "L": 125,
+  "W": 70,
+  "T": 15,
+  "material": "STEEL 1018",
+  "name": "FIXTURE PLATE",
+  "number": "DFM-EVAL-D17",
+  "rev": "A",
+  "blind_hole": {
+    "D": 4.0,
+    "depth": 9.0,
+    "x": 37.5,
+    "y": 23.0,
+    "ratio": 2.25
+  },
+  "slot": null,
+  "pocket": {
+    "x0": 21.0,
+    "x1": 105.5,
+    "y0": 51.5,
+    "y1": 64.5,
+    "width": 84.5,
+    "height": 13.0,
+    "depth": 4.0,
+    "corner_r": 1.5,
+    "wall": 5.5,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": false,
+  "neg_tol_W": true
+}

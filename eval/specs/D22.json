@@ -1,0 +1,43 @@
+{
+  "L": 90,
+  "W": 85,
+  "T": 22,
+  "material": "STEEL 1018",
+  "name": "GEARBOX COVER",
+  "number": "DFM-EVAL-D22",
+  "rev": "A",
+  "blind_hole": {
+    "D": 6.0,
+    "depth": 18.0,
+    "x": 27.0,
+    "y": 28.0,
+    "ratio": 3.0
+  },
+  "slot": {
+    "width": 8.0,
+    "depth": 18.5,
+    "length": 27.0,
+    "x": 58.5,
+    "y": 14.5,
+    "ratio": 2.31
+  },
+  "pocket": {
+    "x0": 18.5,
+    "x1": 69.5,
+    "y0": 60.1,
+    "y1": 84.6,
+    "width": 51.0,
+    "height": 24.5,
+    "depth": 6.5,
+    "corner_r": 2.5,
+    "wall": 0.4,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": "W",
+  "general_tol": true,
+  "neg_tol_W": false
+}

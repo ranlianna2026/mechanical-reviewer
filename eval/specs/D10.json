@@ -1,0 +1,36 @@
+{
+  "L": 90,
+  "W": 55,
+  "T": 30,
+  "material": "STEEL 1018",
+  "name": "GEARBOX COVER",
+  "number": "DFM-EVAL-D10",
+  "rev": "A",
+  "blind_hole": {
+    "D": 2.0,
+    "depth": 27.0,
+    "x": 27.0,
+    "y": 18.0,
+    "ratio": 13.5
+  },
+  "slot": null,
+  "pocket": {
+    "x0": 22.0,
+    "x1": 72.0,
+    "y0": 36.5,
+    "y1": 53.0,
+    "width": 50.0,
+    "height": 16.5,
+    "depth": 9.5,
+    "corner_r": 3.5,
+    "wall": 2.0,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": true,
+  "neg_tol_W": true
+}

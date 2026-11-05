@@ -1,0 +1,37 @@
+{
+  "L": 145,
+  "W": 75,
+  "T": 23,
+  "material": "STAINLESS STEEL 304",
+  "name": "ELECTRONICS LID",
+  "number": "DFM-EVAL-D06",
+  "rev": "A",
+  "blind_hole": null,
+  "slot": {
+    "width": 3.0,
+    "depth": 19.5,
+    "length": 30.0,
+    "x": 94.0,
+    "y": 13.0,
+    "ratio": 6.5
+  },
+  "pocket": {
+    "x0": 17.5,
+    "x1": 128.5,
+    "y0": 55.0,
+    "y1": 69.5,
+    "width": 111.0,
+    "height": 14.5,
+    "depth": 5.5,
+    "corner_r": 2.0,
+    "wall": 5.5,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": true,
+  "neg_tol_W": true
+}

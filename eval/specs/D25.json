@@ -1,0 +1,36 @@
+{
+  "L": 105,
+  "W": 60,
+  "T": 24,
+  "material": "ALUMINUM 7075-T6",
+  "name": "SENSOR MOUNT PLATE",
+  "number": "DFM-EVAL-D25",
+  "rev": "A",
+  "blind_hole": {
+    "D": 1.5,
+    "depth": 20.5,
+    "x": 31.5,
+    "y": 20.0,
+    "ratio": 13.67
+  },
+  "slot": null,
+  "pocket": {
+    "x0": 21.5,
+    "x1": 84.5,
+    "y0": 45.5,
+    "y1": 57.0,
+    "width": 63.0,
+    "height": 11.5,
+    "depth": 5.5,
+    "corner_r": 2.0,
+    "wall": 3.0,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": "W",
+  "general_tol": true,
+  "neg_tol_W": false
+}

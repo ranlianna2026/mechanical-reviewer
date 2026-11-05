@@ -1,0 +1,43 @@
+{
+  "L": 115,
+  "W": 55,
+  "T": 18,
+  "material": "ALUMINUM 7075-T6",
+  "name": "MOTOR BRACKET BASE",
+  "number": "DFM-EVAL-D14",
+  "rev": "A",
+  "blind_hole": {
+    "D": 6.0,
+    "depth": 14.5,
+    "x": 34.5,
+    "y": 18.0,
+    "ratio": 2.42
+  },
+  "slot": {
+    "width": 10.0,
+    "depth": 10.0,
+    "length": 30.0,
+    "x": 75.0,
+    "y": 9.5,
+    "ratio": 1.0
+  },
+  "pocket": {
+    "x0": 19.5,
+    "x1": 97.0,
+    "y0": 37.5,
+    "y1": 50.0,
+    "width": 77.5,
+    "height": 12.5,
+    "depth": 9.5,
+    "corner_r": 3.5,
+    "wall": 5.0,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": false,
+  "neg_tol_W": false
+}

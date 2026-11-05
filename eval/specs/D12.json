@@ -1,0 +1,37 @@
+{
+  "L": 115,
+  "W": 60,
+  "T": 20,
+  "material": "STEEL 1018",
+  "name": "PUMP BASE PLATE",
+  "number": "DFM-EVAL-D12",
+  "rev": "A",
+  "blind_hole": null,
+  "slot": {
+    "width": 8.0,
+    "depth": 16.5,
+    "length": 30.0,
+    "x": 75.0,
+    "y": 10.0,
+    "ratio": 2.06
+  },
+  "pocket": {
+    "x0": 19.5,
+    "x1": 93.0,
+    "y0": 43.7,
+    "y1": 59.7,
+    "width": 73.5,
+    "height": 16.0,
+    "depth": 9.0,
+    "corner_r": 3.0,
+    "wall": 0.3,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": true,
+  "neg_tol_W": false
+}

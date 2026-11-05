@@ -1,0 +1,43 @@
+{
+  "L": 145,
+  "W": 85,
+  "T": 20,
+  "material": "ALUMINUM 7075-T6",
+  "name": "CAMERA MOUNT",
+  "number": "DFM-EVAL-D23",
+  "rev": "A",
+  "blind_hole": {
+    "D": 5.0,
+    "depth": 15.5,
+    "x": 43.5,
+    "y": 28.0,
+    "ratio": 3.1
+  },
+  "slot": {
+    "width": 2.0,
+    "depth": 13.0,
+    "length": 30.0,
+    "x": 94.0,
+    "y": 14.5,
+    "ratio": 6.5
+  },
+  "pocket": {
+    "x0": 18.0,
+    "x1": 129.0,
+    "y0": 69.5,
+    "y1": 79.5,
+    "width": 111.0,
+    "height": 10.0,
+    "depth": 8.5,
+    "corner_r": 3.0,
+    "wall": 5.5,
+    "sharp_via_note": false
+  },
+  "mount_holes": {
+    "D": 6.6,
+    "inset": 8.0
+  },
+  "tight_tol_on": null,
+  "general_tol": false,
+  "neg_tol_W": true
+}
